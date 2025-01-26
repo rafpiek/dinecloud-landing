@@ -1,10 +1,9 @@
 import logoDinecloud2 from "@/assets/images/landing/logo_dinecloud2.svg";
 import Image from "next/image";
-
 export const Footer = () => {
   return (
     <footer id="footer">
-    <div className="container px-4 md:px-0">
+    <div className="mx-auto max-w-7xl px-4 md:px-0">
         <div className="flex flex-wrap md:flex-nowrap">
             <div className="column_1 w-full md:w-1/4">
                 <Image className="logo" src={logoDinecloud2} alt="DineCloud" width={150} height={40}/>
