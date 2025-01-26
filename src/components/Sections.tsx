@@ -47,7 +47,7 @@ export const Sections = () => {
     </div>
 </section>
 <section id="section_cart_1" className="landing_section">
-    <div className="mx-auto max-w-7xl px-4 md:px-0">
+    <div className="mx-auto max-w-7xl px-6 md:px-0">
         <div className="flex flex-col gap-4 md:flex-row">
             <div className="w-full md:w-1/2">
                 <div className="landing_img_box">
@@ -82,7 +82,7 @@ export const Sections = () => {
     </div>
 </section>
 <section id="section_cart_2" className="landing_section">
-    <div className="mx-auto max-w-7xl px-4 md:px-0">
+    <div className="mx-auto max-w-7xl px-6 md:px-0">
         <div className="flex flex-col gap-4 md:flex-row">
             <div className="w-full md:w-1/2">
                 <div className="landing_img_box">
@@ -110,7 +110,7 @@ export const Sections = () => {
     </div>
 </section>
 <section id="section_cart_8" className="landing_section">
-    <div className="mx-auto max-w-7xl px-4 md:px-0">
+    <div className="mx-auto max-w-7xl px-6 md:px-0">
         <div className="flex flex-col gap-4 md:flex-row">
             <div className="w-full md:w-1/2">
                 <h2 className="header_landing_2"><span className="color">INTUICYJNE</span><br/><span className="big">ZARZĄDZANIE.</span></h2>
@@ -142,7 +142,7 @@ export const Sections = () => {
     </div>
 </section>
 <section id="section_cart_9" className="landing_section">
-    <div className="mx-auto max-w-7xl px-4 md:px-0">
+    <div className="mx-auto max-w-7xl px-6 md:px-0">
         <div className="flex flex-row">
             <div className="w-full">
                 <h2 className="header_landing_2"><span className="color">PEŁNA</span><br /><span className="big">KOMPATYBILNOŚĆ.</span></h2>
@@ -175,7 +175,7 @@ export const Sections = () => {
     </div>
 </section>
 <section id="section_cart_3" className="landing_section">
-    <div className="mx-auto max-w-7xl px-4 md:px-0">
+    <div className="mx-auto max-w-7xl px-6 md:px-0">
         <div className="flex flex-row">
             <div className="w-full">
                 <h3 className="header_landing_3">PROCES WDROŻENIA</h3>
