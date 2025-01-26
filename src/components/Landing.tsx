@@ -1,22 +1,17 @@
-import { FC } from 'react';
-import Image from 'next/image';
-import "@/styles/old_style.css"
+import paymentApplepay from "@/assets/images/landing/payment_applepay.svg";
+import paymentBlick from "@/assets/images/landing/payment_blik.svg";
+import paymentGooglepay from "@/assets/images/landing/payment_googlepay.svg";
+import paymentMastercard from "@/assets/images/landing/payment_mastercard.svg";
+import paymentVisa from "@/assets/images/landing/payment_visa.svg";
+import "@/styles/old_style.css";
 import "@/styles/style2.css";
 import "bootstrap/dist/css/bootstrap.min.css";
-import "../app/jquery"
-import paymentBlick from "@/assets/images/landing/payment_blik.svg";
-import paymentApplepay from "@/assets/images/landing/payment_applepay.svg";
-import paymentGooglepay from "@/assets/images/landing/payment_googlepay.svg";
-import paymentVisa from "@/assets/images/landing/payment_visa.svg";
-import paymentMastercard from "@/assets/images/landing/payment_mastercard.svg";
-import heroImg from "@/assets/images/landing/hero_img.png";
-import logoDinecloud from "@/assets/images/landing/logo_dinecloud.svg";
-import logoDinecloud2 from "@/assets/images/landing/logo_dinecloud2.svg";
-import logo2 from "@/assets/images/landing/logo_appstore.svg";
-import logo3 from "@/assets/images/landing/logo_googleplay.svg";
+import Image from 'next/image';
+import { FC } from 'react';
+import { Faq } from './Faq';
+import { Footer } from './Footer';
 import { Hero } from './Hero';
 import { MoreButton } from './MoreButton';
-import { Faq } from './Faq';
 
 export const Landing: FC = () => {
   return(
@@ -301,49 +296,8 @@ export const Landing: FC = () => {
         </form>
     </section>
 </main>
-<footer id="footer">
-    <div className="container">
-        <div className="row">
-            <div className="column_1 col-md-3">
-                <Image className="logo" src={logoDinecloud2} alt="DineCloud" width={150} height={40}/>
-                <p className="white">DineCloud sp. z o.o.</p>
-                <div>Marii Dąbrowskiej 24/12<br />33-100 Tarnów<br />Polska</div>
-                <div className="email">
-                    <a href="mailto:contact@dinecloud.net">contact@dinecloud.net</a>
-                </div>
-                <div className="socials">
-                    <a className="instagram" href="#" target="_blank"></a>
-                    <a className="facebook" href="#" target="_blank"></a>
-                    <a className="linkedin" href="#" target="_blank"></a>
-                </div>
-            </div>
-            <div className="column_2 col-md-3">
-                <h4 className="header_landing_4">Dla restauracji</h4>
-                <a href="#">Skontaktuj się</a>
-            </div>
-            <div className="column_3 col-md-3">
-                <h4 className="header_landing_4">Dla gości</h4>
-                <a href="#">Pobierz aplikację</a>
-            </div>
-            <div className="column_4 col-md-3">
-                <h4 className="header_landing_4">Poznawaj</h4>
-                <a href="#">Polityka prywatności</a>
-                <a href="#">Regulamin</a>
-            </div>
-        </div>
-        <div className="row">
-            <div className="col-12">
-                <p className="copyright_text">&copy; 2024 DineCloud sp. z o.o.<br className="xs" /> KRS: <span>0001048018</span>, NIP: <span>8733291405</span>, REGON: <span>525915687</span>.<br className="xs" /> Wszystkie prawa zastrzeżone.</p>
-            </div>
-        </div>
-    </div>
-</footer>
-<div id="nav_mobile_container">
-    <p className="text">DLA RESTAURACJI</p>
-    <a className="btn_navbar_primary icon icon_chat_text">Skontaktuj się</a>
-    <p className="text mt">DLA GOŚCI</p>
-    <a className="btn_navbar_primary icon icon_import">Pobierz aplikację</a>
-    </div>
+<Footer />
+
     </>
   );
 };

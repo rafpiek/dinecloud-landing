@@ -1,12 +1,6 @@
-import paymentBlick from "@/assets/images/landing/payment_blik.svg";
-import paymentApplepay from "@/assets/images/landing/payment_applepay.svg";
-import paymentGooglepay from "@/assets/images/landing/payment_googlepay.svg";
-import paymentVisa from "@/assets/images/landing/payment_visa.svg";
-import paymentMastercard from "@/assets/images/landing/payment_mastercard.svg";
 import heroImg from "@/assets/images/landing/hero_img.png";
-import logoDinecloud from "@/assets/images/landing/logo_dinecloud.svg";
-import logoDinecloud2 from "@/assets/images/landing/logo_dinecloud2.svg";
 import logo2 from "@/assets/images/landing/logo_appstore.svg";
+import logoDinecloud from "@/assets/images/landing/logo_dinecloud.svg";
 import logo3 from "@/assets/images/landing/logo_googleplay.svg";
 import Image from "next/image";
 export const Hero = () => {
@@ -36,3 +30,4 @@ export const Hero = () => {
     <Image id="hero_img" src={heroImg} alt="" width={1200} height={600} />
 </section>
   )
+};

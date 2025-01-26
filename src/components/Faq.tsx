@@ -10,9 +10,9 @@ export const Faq = () => {
 
   return(
     <section id="section_cart_5" className="landing_section">
-    <div className="container">
-        <div className="row">
-            <div className="col-12">
+    <div className="mx-auto w-full max-w-[1320px] px-4 md:px-6">
+        <div className="flex flex-wrap">
+            <div className="w-full">
                 <h2 className="header_landing_2"><span className="big">FAQ.</span></h2>
                 <ul className="toggle_list">
                     {[0, 1, 2, 3].map((index) => (

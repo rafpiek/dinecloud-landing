@@ -17,3 +17,4 @@ window.scrollTo({
     <span className="body_4">Dowiedz się więcej</span>
 </a>
   )
+};

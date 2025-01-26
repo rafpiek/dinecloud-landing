@@ -36,6 +36,12 @@ export const Header = () => {
     </div>
 </header>
 <div id="header_pseudo"></div>
+<div id="nav_mobile_container">
+    <p className="text">DLA RESTAURACJI</p>
+    <a className="btn_navbar_primary icon icon_chat_text">Skontaktuj się</a>
+    <p className="text mt">DLA GOŚCI</p>
+    <a className="btn_navbar_primary icon icon_import">Pobierz aplikację</a>
+    </div>
 </>
   )
 };
