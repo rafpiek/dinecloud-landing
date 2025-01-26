@@ -6930,136 +6930,136 @@ textarea.form_input_text {
   width: 186px;
 }
 #banks_box .pko::before {
-  background-image: url(../assets/images/landing/banks/monochrome/pko1.svg);
+  /* background-image: url(../assets/images/landing/banks/monochrome/pko1.svg); */
 }
 #banks_box .pko::after {
-  background-image: url(../assets/images/landing/banks/color/pko2.svg);
+  /* background-image: url(../assets/images/landing/banks/color/pko2.svg); */
 }
 #banks_box .pekao {
   width: 192px;
 }
 #banks_box .pekao::before {
-  background-image: url(../assets/images/landing/banks/monochrome/pekao1.svg);
+  /* background-image: url(../assets/images/landing/banks/monochrome/pekao1.svg); */
 }
 #banks_box .pekao::after {
-  background-image: url(../assets/images/landing/banks/color/pekao2.svg);
+  /* background-image: url(../assets/images/landing/banks/color/pekao2.svg); */
 }
 #banks_box .millennium {
   width: 172px;
 }
 #banks_box .millennium::before {
-  background-image: url(../assets/images/landing/banks/monochrome/millennium1.svg);
+  /* background-image: url(../assets/images/landing/banks/monochrome/millennium1.svg); */
 }
 #banks_box .millennium::after {
-  background-image: url(../assets/images/landing/banks/color/millennium2.svg);
+  /* background-image: url(../assets/images/landing/banks/color/millennium2.svg); */
 }
 #banks_box .mbank {
   width: 120px;
 }
 #banks_box .mbank::before {
-  background-image: url(../assets/images/landing/banks/monochrome/mbank1.svg);
+  /* background-image: url(../assets/images/landing/banks/monochrome/mbank1.svg); */
 }
 #banks_box .mbank::after {
-  background-image: url(../assets/images/landing/banks/color/mbank2.svg);
+  /* background-image: url(../assets/images/landing/banks/color/mbank2.svg); */
 }
 #banks_box .ing {
   width: 198px;
 }
 #banks_box .ing::before {
-  background-image: url(../assets/images/landing/banks/monochrome/ing1.svg);
+  /* background-image: url(../assets/images/landing/banks/monochrome/ing1.svg); */
 }
 #banks_box .ing::after {
-  background-image: url(../assets/images/landing/banks/color/ing2.svg);
+  /* background-image: url(../assets/images/landing/banks/color/ing2.svg); */
 }
 #banks_box .santander {
   width: 176px;
 }
 #banks_box .santander::before {
-  background-image: url(../assets/images/landing/banks/monochrome/santander1.svg);
+  /* background-image: url(../assets/images/landing/banks/monochrome/santander1.svg); */
 }
 #banks_box .santander::after {
-  background-image: url(../assets/images/landing/banks/color/santander2.svg);
+  /* background-image: url(../assets/images/landing/banks/color/santander2.svg); */
 }
 #banks_box .alior {
   width: 128px;
 }
 #banks_box .alior::before {
-  background-image: url(../assets/images/landing/banks/monochrome/alior1.svg);
+  /* background-image: url(../assets/images/landing/banks/monochrome/alior1.svg); */
 }
 #banks_box .alior::after {
-  background-image: url(../assets/images/landing/banks/color/alior2.svg);
+  /* background-image: url(../assets/images/landing/banks/color/alior2.svg); */
 }
 #banks_box .bnp {
   width: 194px;
 }
 #banks_box .bnp::before {
-  background-image: url(../assets/images/landing/banks/monochrome/bnp1.svg);
+  /* background-image: url(../assets/images/landing/banks/monochrome/bnp1.svg); */
 }
 #banks_box .bnp::after {
-  background-image: url(../assets/images/landing/banks/color/bnp2.svg);
+  /* background-image: url(../assets/images/landing/banks/color/bnp2.svg); */
 }
 #banks_box .nest {
   width: 118px;
 }
 #banks_box .nest::before {
-  background-image: url(../assets/images/landing/banks/monochrome/nest1.svg);
+  /* background-image: url(../assets/images/landing/banks/monochrome/nest1.svg); */
 }
 #banks_box .nest::after {
-  background-image: url(../assets/images/landing/banks/color/nest2.svg);
+  /* background-image: url(../assets/images/landing/banks/color/nest2.svg); */
 }
 #banks_box .citi {
   width: 172px;
 }
 #banks_box .citi::before {
-  background-image: url(../assets/images/landing/banks/monochrome/citi1.svg);
+  /* background-image: url(../assets/images/landing/banks/monochrome/citi1.svg); */
 }
 #banks_box .citi::after {
-  background-image: url(../assets/images/landing/banks/color/citi2.svg);
+  /* background-image: url(../assets/images/landing/banks/color/citi2.svg); */
 }
 #banks_box .agricole {
   width: 168px;
 }
 #banks_box .agricole::before {
-  background-image: url(../assets/images/landing/banks/monochrome/agricole1.svg);
+  /* background-image: url(../assets/images/landing/banks/monochrome/agricole1.svg); */
 }
 #banks_box .agricole::after {
-  background-image: url(../assets/images/landing/banks/color/agricole2.svg);
+  /* background-image: url(../assets/images/landing/banks/color/agricole2.svg); */
 }
 #banks_box .velo {
   width: 172px;
 }
 #banks_box .velo::before {
-  background-image: url(../assets/images/landing/banks/monochrome/velo1.svg);
+  /* background-image: url(../assets/images/landing/banks/monochrome/velo1.svg); */
 }
 #banks_box .velo::after {
-  background-image: url(../assets/images/landing/banks/color/velo2.svg);
+  /* background-image: url(../assets/images/landing/banks/color/velo2.svg); */
 }
 #banks_box .pocztowy {
   width: 210px;
 }
 #banks_box .pocztowy::before {
-  background-image: url(../assets/images/landing/banks/monochrome/pocztowy1.svg);
+  /* background-image: url(../assets/images/landing/banks/monochrome/pocztowy1.svg); */
 }
 #banks_box .pocztowy::after {
-  background-image: url(../assets/images/landing/banks/color/pocztowy2.svg);
+  /* background-image: url(../assets/images/landing/banks/color/pocztowy2.svg); */
 }
 #banks_box .bos {
   width: 156px;
 }
 #banks_box .bos::before {
-  background-image: url(../assets/images/landing/banks/monochrome/bos1.svg);
+  /* background-image: url(../assets/images/landing/banks/monochrome/bos1.svg); */
 }
 #banks_box .bos::after {
-  background-image: url(../assets/images/landing/banks/color/bos2.svg);
+  /* background-image: url(../assets/images/landing/banks/color/bos2.svg); */
 }
 #banks_box .plus {
   width: 160px;
 }
 #banks_box .plus::before {
-  background-image: url(../assets/images/landing/banks/monochrome/plus1.svg);
+  /* background-image: url(../assets/images/landing/banks/monochrome/plus1.svg); */
 }
 #banks_box .plus::after {
-  background-image: url(../assets/images/landing/banks/color/plus2.svg);
+  /* background-image: url(../assets/images/landing/banks/color/plus2.svg); */
 }
 #section_3 {
   position: relative;
