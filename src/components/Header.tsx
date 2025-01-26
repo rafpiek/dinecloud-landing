@@ -1,4 +1,5 @@
 import { useScrollToForm } from "@/hooks/useScrollToForm";
+import Link from "next/link";
 
 export const Header = () => {
 
@@ -22,10 +23,10 @@ export const Header = () => {
     <div className="w-full px-3">
         <div className="flex flex-wrap items-center justify-between">
             <div className="w-[30%] md:w-1/2 col-6 flex justify-start items-center h-[64px] p-0">
-                <a id="logo" href="./"></a>
+                <Link id="logo" href="/"></Link>
                 <nav id="nav_main" role="navigation">
                     <ul>
-                        <li><a className="btn_navbar_secondary no-underline" href="#">Pobierz aplikację dla gości</a></li>
+                        <li><Link className="btn_navbar_secondary no-underline" href="/download">Pobierz aplikację dla gości</Link></li>
                     </ul>
                 </nav>
             </div>
