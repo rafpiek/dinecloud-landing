@@ -1,16 +1,9 @@
+import { useScrollToForm } from "@/hooks/useScrollToForm";
+
 export const MoreButton = () => {
-  const onMoreClick = (e: React.MouseEvent<HTMLAnchorElement>) => {
-    e.preventDefault();
-    const element = document.querySelector('#form_contact');
-const offset = 100;
-const elementPosition = element!.getBoundingClientRect().top + window.scrollY;
-window.scrollTo({
-    top: elementPosition - offset,
-    behavior: 'smooth'
-});
-  }
+  const scrollToForm = useScrollToForm();
   return(
-    <a className="more no-underline" onClick={onMoreClick}>
+    <a className="more no-underline" onClick={scrollToForm}>
     <span className="arrow_1"></span>
     <span className="arrow_2"></span>
     <span className="arrow_3"></span>

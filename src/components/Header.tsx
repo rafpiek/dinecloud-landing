@@ -1,4 +1,8 @@
+import { useScrollToForm } from "@/hooks/useScrollToForm";
+
 export const Header = () => {
+
+  const scrollToForm = useScrollToForm();
 
     const onMobileNavClick = () => {
       const mobileNav = document.getElementById("nav_mobile_container");
@@ -28,7 +32,7 @@ export const Header = () => {
             <div className="w-[70%] md:w-1/2 col-6 flex justify-end items-center h-[64px] p-0">
                 <div id="nav_right">
                     <span className="small_button">Rozpocznij bezpłatny testy!</span>
-                    <a className="btn_navbar_primary disabled_cursor xs no-underline" href="#">Skontaktuj się</a>
+                    <a className="btn_navbar_primary cursor-pointer xs no-underline" onClick={scrollToForm}>Skontaktuj się</a>
                     <div id="nav_mobile_button" onClick={onMobileNavClick} className="btn_navbar_primary icon no_text"></div>
                 </div>
             </div>
@@ -38,7 +42,7 @@ export const Header = () => {
 <div id="header_pseudo"></div>
 <div id="nav_mobile_container">
     <p className="text">DLA RESTAURACJI</p>
-    <a className="btn_navbar_primary icon icon_chat_text">Skontaktuj się</a>
+    <a className="btn_navbar_primary icon icon_chat_text" onClick={scrollToForm}>Skontaktuj się</a>
     <p className="text mt">DLA GOŚCI</p>
     <a className="btn_navbar_primary icon icon_import">Pobierz aplikację</a>
     </div>

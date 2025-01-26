@@ -9,7 +9,7 @@ export const ContactForm = () => {
                     <p className="body_4">Zostaw swoje dane, a wrócimy ze szczegółową ofertą<br/> usług i wsparciem tak szybko jak to możliwe.</p>
                 </div>
             </div>
-            <div className="flex flex-row gap-4 middle">
+            <div className="flex flex-col gap-4 md:flex-row gap-4 middle">
                 <div className="w-full md:w-1/2 border-2 border-red-500">
                     <p className="form_group">
                         <input type="text" name="form_name" className="form_input_text" placeholder="nazwa restauracji" />
