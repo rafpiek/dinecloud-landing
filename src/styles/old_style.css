@@ -4435,19 +4435,6 @@ textarea.form_input_text {
   background: rgba(0, 0, 40, 0.01);
   border-radius: 40px;
 }
-#header {
-  position: fixed;
-  top: 0;
-  width: 100%;
-  height: 88px;
-  padding: 0 13px;
-  background: #191928;
-  -webkit-transition: all 200ms ease-in-out;
-  -moz-transition: all 200ms ease-in-out;
-  -ms-transition: all 200ms ease-in-out;
-  -o-transition: all 200ms ease-in-out;
-  transition: all 200ms ease-in-out;
-}
 #logo {
   width: 90px;
   height: 31px;
@@ -6459,10 +6446,6 @@ textarea.form_input_text {
 .disabled_cursor:hover {
   cursor: no-drop;
 }
-.landing #header {
-  z-index: 3;
-  height: 64px;
-}
 .landing #header_pseudo {
   top: 64px;
   left: 0;
@@ -8113,12 +8096,6 @@ textarea.form_input_text {
   .signup.step_2 .form_phone_box,
   .partners .form_phone_box {
     width: calc(100% - 88px - 16px);
-  }
-  .landing #header {
-    padding: 0;
-  }
-  .landing #header > .container-fluid {
-    padding: 0 24px;
   }
   .landing #nav_main {
     display: none;
