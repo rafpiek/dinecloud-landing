@@ -14,43 +14,18 @@ import logoDinecloud from "@/assets/images/landing/logo_dinecloud.svg";
 import logoDinecloud2 from "@/assets/images/landing/logo_dinecloud2.svg";
 import logo2 from "@/assets/images/landing/logo_appstore.svg";
 import logo3 from "@/assets/images/landing/logo_googleplay.svg";
+import { Hero } from './Hero';
+import { MoreButton } from './MoreButton';
+import { Faq } from './Faq';
 
 export const Landing: FC = () => {
   return(
     <>
 
-<div id="header_pseudo"></div>
-<section id="hero_section">
-    <div className="container">
-        <div className="row">
-            <div className="col-12">
-                <div className="top">
-                    <Image className="logo_1" src={logoDinecloud} alt="DineCloud" width={200} height={50}/>
-                </div>
-                <div className="middle">
-                    <h1 className="header_landing_1">
-                        QR MENU
-                        <span>I PŁATNOŚCI ONLINE.</span>
-                    </h1>
-                    <p className="body_3">Składanie zamówień poprzez QR kody na stolikach,<br /> bez udziału kelnera.</p>
-                </div>
-                <div className="bottom">
-                    <a className="btn_primary personal contact_button">Skontaktuj się</a>
-                    <a className="app_url" href="#"><Image className="logo_2" src={logo2} alt="App Store" width={120} height={40} /></a>
-                    <a className="app_url" href="#"><Image className="logo_3" src={logo3} alt="Google Play" width={120} height={40} /></a>
-                </div>
-            </div>
-        </div>
-    </div>
-    <Image id="hero_img" src={heroImg} alt="" width={1200} height={600} />
-</section>
+
+<Hero />
 <main id="main">
-    <a className="more">
-        <span className="arrow_1"></span>
-        <span className="arrow_2"></span>
-        <span className="arrow_3"></span>
-        <span className="body_4">Dowiedz się więcej</span>
-    </a>
+    <MoreButton />
     <section id="section_cart_7" className="landing_section">
         <div className="container">
             <div className="row">
@@ -271,33 +246,7 @@ export const Landing: FC = () => {
             </div>
         </div>
     </section>
-    <section id="section_cart_5" className="landing_section">
-        <div className="container">
-            <div className="row">
-                <div className="col-12">
-                    <h2 className="header_landing_2"><span className="big">FAQ.</span></h2>
-                    <ul className="toggle_list">
-                        <li className="active">
-                            <p className="heading body_4"><strong>Lorem ipsum dolor sit amet?</strong></p>
-                            <div className="text body_4">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</div>
-                        </li>
-                        <li>
-                            <p className="heading body_4"><strong>Lorem ipsum dolor sit amet?</strong></p>
-                            <div className="text body_4">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</div>
-                        </li>
-                        <li>
-                            <p className="heading body_4"><strong>Lorem ipsum dolor sit amet?</strong></p>
-                            <div className="text body_4">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</div>
-                        </li>
-                        <li>
-                            <p className="heading body_4"><strong>Lorem ipsum dolor sit amet?</strong></p>
-                            <div className="text body_4">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</div>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </section>
+    <Faq />
     <section id="section_10" className="landing_section dark">
         <form id="form_contact" action="#" method="post">
             <div className="container">
