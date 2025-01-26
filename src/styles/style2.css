@@ -35,7 +35,7 @@
 /* hero section */
 #hero_section {
   height: 560px;
-  background-image: url(@/assets/images/landing/hero_client.jpg);
+  background-image: url(../assets/images/landing/hero_client.jpg);
   background-position: left center;
 }
 
@@ -140,7 +140,7 @@
   padding: 56px 312px 80px;
   margin-bottom: 224px;
   border-radius: 40px;
-  background: url(@/assets/images/landing/contact.jpg) no-repeat center center;
+  background: url(../assets/images/landing/contact.jpg) no-repeat center center;
   background-size: cover;
   text-align: left;
 }
@@ -207,17 +207,17 @@
   left: 50%;
   width: 600px;
   height: 620px;
-  background: url(@/assets/images/landing/1.png) no-repeat center top;
+  background: url(../assets/images/landing/1.png) no-repeat center top;
   background-size: contain;
   transform: translateX(-50%);
 }
 
 #img_2 {
-  background-image: url(@/assets/images/landing/2.png);
+  background-image: url(../assets/images/landing/2.png);
 }
 
 #img_3 {
-  background-image: url(@/assets/images/landing/3.png);
+  background-image: url(../assets/images/landing/3.png);
 }
 
 #section_cart_1 .logo {
@@ -348,27 +348,27 @@
 }
 
 .box_tile.restaurants {
-  background-image: url(@/assets/images/landing/restaurants.jpg);
+  background-image: url(../assets/images/landing/restaurants.jpg);
 }
 
 .box_tile.bars {
-  background-image: url(@/assets/images/landing/bars.jpg);
+  background-image: url(../assets/images/landing/bars.jpg);
 }
 
 .box_tile.cafe {
-  background-image: url(@/assets/images/landing/cafe.jpg);
+  background-image: url(../assets/images/landing/cafe.jpg);
 }
 
 .box_tile.common {
-  background-image: url(@/assets/images/landing/common.jpg);
+  background-image: url(../assets/images/landing/common.jpg);
 }
 
 .box_tile.foodtrucks {
-  background-image: url(@/assets/images/landing/foodtrucks.jpg);
+  background-image: url(../assets/images/landing/foodtrucks.jpg);
 }
 
 .box_tile.hotels {
-  background-image: url(@/assets/images/landing/hotels.jpg);
+  background-image: url(../assets/images/landing/hotels.jpg);
 }
 
 #section_cart_7 .ol.mt {
@@ -564,15 +564,15 @@
 }
 
 .socials .instagram {
-  background-image: url(@/assets/images/landing/icon-instagram.svg);
+  background-image: url(../assets/images/landing/icon-instagram.svg);
 }
 
 .socials .facebook {
-  background-image: url(@/assets/images/landing/icon-facebook.svg);
+  background-image: url(../assets/images/landing/icon-facebook.svg);
 }
 
 .socials .linkedin {
-  background-image: url(@/assets/images/landing/icon-linkedin.svg);
+  background-image: url(../assets/images/landing/icon-linkedin.svg);
 }
 
 .copyright_text {
@@ -727,52 +727,52 @@ body .step_box:not(.active) {
 }
 
 .icon_box.location::after {
-  background-image: url(@/assets/images/icon-location.svg);
+  background-image: url(../assets/images/icon-location.svg);
 }
 
 .icon_chevron_right3::after {
-  background-image: url(@/assets/images/icon-chevron-right3.svg);
+  background-image: url(../assets/images/icon-chevron-right3.svg);
 }
 
 .icon_import::after {
-  background-image: url(@/assets/images/icon-import.svg);
+  background-image: url(../assets/images/icon-import.svg);
 }
 
 .icon_code::after {
-  background-image: url(@/assets/images/icon-code.svg);
+  background-image: url(../assets/images/icon-code.svg);
 }
 
 .icon_scan_qr_code::after {
-  background-image: url(@/assets/images/landing/icon-scan-qr-code.svg);
+  background-image: url(../assets/images/landing/icon-scan-qr-code.svg);
 }
 
 .icon_timelapse_25::after {
-  background-image: url(@/assets/images/landing/icon-timelapse-25.svg);
+  background-image: url(../assets/images/landing/icon-timelapse-25.svg);
 }
 
 .icon_info_sq_fr::after {
-  background-image: url(@/assets/images/landing/icon-info-sq-fr.svg);
+  background-image: url(../assets/images/landing/icon-info-sq-fr.svg);
 }
 
 .icon_briefcase::after {
-  background-image: url(@/assets/images/landing/icon-briefcase.svg);
+  background-image: url(../assets/images/landing/icon-briefcase.svg);
 }
 
 .icon_translate_01::after {
-  background-image: url(@/assets/images/landing/icon-translate-01.svg);
+  background-image: url(../assets/images/landing/icon-translate-01.svg);
 }
 
 .icon_eye::after {
-  background-image: url(@/assets/images/landing/icon-eye.svg);
+  background-image: url(../assets/images/landing/icon-eye.svg);
 }
 
 .icon_edit::after {
-  background-image: url(@/assets/images/landing/icon-edit.svg);
+  background-image: url(../assets/images/landing/icon-edit.svg);
 }
 
 /* forms */
 .dark .form_select::after {
-  background: url(@/assets/images/icon-chevron-down2.svg);
+  background: url(../assets/images/icon-chevron-down2.svg);
   -webkit-mask-image: unset;
   mask-image: unset;
   -webkit-mask-size: unset;
@@ -894,7 +894,7 @@ strong {
 }
 
 .landing .icon_info_cr_fr3::after {
-  background-image: url(@/assets/images/icon-info-cr-fr.svg);
+  background-image: url(../assets/images/icon-info-cr-fr.svg);
   opacity: 0.75;
 }
 
@@ -943,7 +943,7 @@ strong {
   height: 184px;
   display: block;
   margin: 0 auto 24px;
-  background: url(@/assets/images/icon-success.svg) no-repeat center top;
+  background: url(../assets/images/icon-success.svg) no-repeat center top;
   background-size: contain;
 }
 
@@ -1476,7 +1476,7 @@ strong {
     display: block;
   }
   .landing #nav_mobile_button::after {
-    background-image: url(@/assets/images/icon-plus-sq-fr.svg);
+    background-image: url("../assets/images/icon-plus-sq-fr.svg");
   }
   #nav_mobile_container {
     position: fixed;
@@ -1516,7 +1516,7 @@ strong {
     display: block;
   }
   body.nav_mobile #nav_mobile_button::after {
-    background-image: url(@/assets/images/icon-remove-sq-fr.svg);
+    background-image: url(../assets/images/icon-remove-sq-fr.svg);
   }
   body.nav_mobile #nav_right .btn_navbar_primary.xs {
     display: none;
