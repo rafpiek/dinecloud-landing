@@ -1,0 +1,485 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DineCloud</title>
+
+    <link rel="stylesheet" media="screen" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" href="css/style.min.css?13" />
+    <link rel="stylesheet" type="text/css" href="css/style2.min.css?2" />
+      
+    <script type="text/javascript" src="js/jquery-3.6.0.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $("#form_contact").validate({
+                rules: {
+                    form_name: {
+                        required: true
+                    },
+                    form_city: {
+                        required: true
+                    },
+                    form_email: {
+                        required: true,
+                        email: true
+                    },
+                    form_phone: {
+                        required: true,
+                        digits: true
+                    }
+                },
+                messages: {
+                    form_name: {
+                        required: "Pole obowiązkowe",
+                    },
+                    form_city: {
+                        required: "Pole obowiązkowe"
+                    },
+                    form_email: {
+                        required: "Pole obowiązkowe",
+                        email: "Niepoprawny e-mail"
+                    },
+                    form_phone: {
+                        required: "Pole obowiązkowe",
+                        digits: "Niepoprawny nr telefonu",
+                    }
+                },
+                errorPlacement: function (error, element) {
+                    error.appendTo(element.parent());
+                }
+            });
+
+            $("#nav_mobile_button").on('click', function()
+            {
+                if($("#nav_mobile_container").hasClass('active'))
+                {
+                    $("body").removeClass('nav_mobile');
+                    $("#nav_mobile_container").removeClass('active');
+                }
+                else
+                {
+                    $("body").addClass('nav_mobile');
+                    $("#nav_mobile_container").addClass('active');
+                }
+            });
+
+            $(".more").click(function () {
+                $([document.documentElement, document.body]).animate(
+                    {
+                        scrollTop: $("#section_cart_1").offset().top - 100
+                    }, 500);
+            });
+
+            $(".toggle_list li > p").on('click', function () {
+                $(this).parent().toggleClass('active');
+            });
+        });
+    </script>
+</head>
+
+<body class="landing">
+
+<header id="header">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-6">
+                <a id="logo" href="./"></a>
+                <nav id="nav_main" role="navigation">
+                    <ul>
+                        <li><a class="btn_navbar_secondary" href="#">Pobierz aplikację dla gości</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="col-6">
+                <div id="nav_right">
+                    <span class="small_button">Rozpocznij bezpłatny testy!</span>
+                    <a class="btn_navbar_primary disabled_cursor xs" href="#">Skontaktuj się</a>
+                    <div id="nav_mobile_button" class="btn_navbar_primary icon no_text"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+<div id="header_pseudo"></div>
+<section id="hero_section">
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <div class="top">
+                    <img class="logo_1" src="gfx/landing/logo_dinecloud.svg" alt="DineCloud"/>
+                </div>
+                <div class="middle">
+                    <h1 class="header_landing_1">
+                        QR MENU
+                        <span>I PŁATNOŚCI ONLINE.</span>
+                    </h1>
+                    <p class="body_3">Składanie zamówień poprzez QR kody na stolikach,<br /> bez udziału kelnera.</p>
+                </div>
+                <div class="bottom">
+                    <a class="btn_primary personal contact_button">Skontaktuj się</a>
+                    <a class="app_url" href="#"><img class="logo_2" src="gfx/landing/logo_appstore.svg" alt="App Store" /></a>
+                    <a class="app_url" href="#"><img class="logo_3" src="gfx/landing/logo_googleplay.svg" alt="Google Play" /></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <img id="hero_img" src="gfx/landing/hero_img.png" alt="" />
+</section>
+<main id="main">
+    <a class="more">
+        <span class="arrow_1"></span>
+        <span class="arrow_2"></span>
+        <span class="arrow_3"></span>
+        <span class="body_4">Dowiedz się więcej</span>
+    </a>
+    <section id="section_cart_7" class="landing_section">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <h2 class="header_landing_2"><span class="color">KORZYŚCI</span> PO<br/><span class="big">WDROŻENIU</span></h2>
+                    <div class="container_tiles">
+                        <div class="box_tile lg-3">
+                            <h3 class="header_landing_3"><span class="color">PONAD 2X MNIEJ</span>KONWERSJI</h3>
+                            <p class="body_4">potrzebnych do obsłużenia gości.</p>
+                            <div class="ol mt"><span>1.</span> przynosi menu</div>
+                            <div class="ol"><span>2.</span> zbiera zamówienie</div>
+                            <div class="ol active"><span>3.</span> przynosi danie</div>
+                            <div class="ol"><span>4.</span> przychodzi z rachunkiem</div>
+                            <div class="ol active"><span>5.</span> odnosi puste talerze</div>
+                        </div>
+                        <div class="right">
+                            <div class="box_tile lg-2">
+                                <h3 class="header_landing_3"><span class="color">4X SZYBSZE</span>ZAMÓWIENIE</h3>
+                                <p class="body_4">od momentu zajęcia stolika do podjęcia decyzji i złożenia zamówienia.</p>
+                            </div>
+                            <div class="box_tile lg-2">
+                                <h3 class="header_landing_3"><span class="color">WIĘKSZA</span>ROTACJA KLIENTÓW</h3>
+                                <p class="body_4">z powodu szybszego przepływu informacji, szybszego procesu obsługi i krótszego pobytu gości.</p>
+                            </div>
+                            <div class="box_tile lg-2 mt">
+                                <h3 class="header_landing_3"><span class="color">2X WIĘCEJ</span>DOSPRZEDANYCH</h3>
+                                <p class="body_4">produktów poza głównymi daniami.</p>
+                            </div>
+                            <div class="box_tile lg-2 mt">
+                                <h3 class="header_landing_3"><span class="color">MNIEJ</span>KOSZTÓW</h3>
+                                <p class="body_4">związanych z wypłatami dla kelnerów, aktualizacją menu i/lub kosztem wibracyjnych pager’ów.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="toastbox info icon_info_cr_fr3 lg">System jest kompatybilny zarówno z restauracjami z obsługą kelnerską, z restauracjami samoobsługowymi jak i częściami wspólnymi wielu restauracji.</div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="section_cart_1" class="landing_section">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="landing_img_box">
+                        <div id="img_1"></div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <h2 class="header_landing_2"><span class="color">BŁYSKAWICZNE</span><br/><span class="big">ZAMÓWIENIA.</span></h2>
+                    <div class="icon_container">
+                        <div class="icon_box icon_scan_qr_code">
+                            <p class="body_4"><strong>Zamawianie dań przez QR kod</strong></p>
+                            <p class="body_4 color">Szybkie, proste, bez udziału kelnera i bez czekania na kelnera. Aplikacja mobilna nie jest wymagana aby złożyć zamówienie.</p>
+                        </div>
+                        <div class="icon_box wallet ps_box_container">
+                            <p class="body_4"><strong>Płatności online</strong></p>
+                            <p class="body_4 color">Zapewnij swoim klientom najbezpieczniejsze i najłatwiejsze metody płatności dostępne na rynku.</p>
+                            <div class="ps_box">
+                                <img src="gfx/landing/payment_blik.svg" alt="BLIK">
+                                <img src="gfx/landing/payment_applepay.svg" alt="Apple Pay">
+                                <img src="gfx/landing/payment_googlepay.svg" alt="Google Pay">
+                                <img src="gfx/landing/payment_visa.svg" alt="Visa">
+                                <img src="gfx/landing/payment_mastercard.svg" alt="Mastercard">
+                            </div>
+                        </div>
+                        <div class="icon_box icon_timelapse_25">
+                            <p class="body_4"><strong>Powiadomienia o statusie zamówienia</strong></p>
+                            <p class="body_4 color">Informuj swoich klientów na jakim etapie przygotowania jest ich danie.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="section_cart_2" class="landing_section">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="landing_img_box">
+                        <div id="img_2"></div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <h2 class="header_landing_2"><span class="color">PROSTA</span><br/><span class="big">KOMUNIKACJA.</span></h2>
+                    <div class="icon_container">
+                        <div class="icon_box icon_info_sq_fr">
+                            <p class="body_4"><strong>Zdjęcia potraw i alergeny</strong></p>
+                            <p class="body_4 color">Nie marnuj czasu kelnerów na tłumaczenie jak wygląda danie i jakie zawiera składniki.</p>
+                        </div>
+                        <div class="icon_box icon_briefcase">
+                            <p class="body_4"><strong>Przycisk “Wezwij Kelnera”</strong></p>
+                            <p class="body_4 color">W razie indywidualnej potrzeby klienci mogą skorzystać z opcji “Wezwij Kelnera”.</p>
+                        </div>
+                        <div class="icon_box icon_translate_01">
+                            <p class="body_4"><strong>Wielojęzyczne menu</strong></p>
+                            <p class="body_4 color">Wybierz języki menu spośród najpopularniejszych w danym regionie.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="section_cart_8" class="landing_section">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <h2 class="header_landing_2"><span class="color">INTUICYJNE</span><br/><span class="big">ZARZĄDZANIE.</span></h2>
+                    <div class="icon_container">
+                        <div class="icon_box icon_eye">
+                            <p class="body_4"><strong>Podgląd otwartych zamówień</strong></p>
+                            <p class="body_4 color">Twoi kelnerzy będą widzieć wszystkie zamówienia na żywo w jednym miejscu.</p>
+                        </div>
+                        <div class="icon_box icon_timelapse_25">
+                            <p class="body_4"><strong>Zarządzanie statusami dań</strong></p>
+                            <p class="body_4 color">Aktualizacja statusu jednym kliknięciem.</p>
+                        </div>
+                        <div class="icon_box icon_edit">
+                            <p class="body_4"><strong>Tworzenie, edycja i podmiana menu</strong></p>
+                            <p class="body_4 color">Dodawaj sekcje menu, dania wraz ze zdjęciami, zarządzaj cenami.</p>
+                        </div>
+                        <div class="icon_box icon_scan_qr_code">
+                            <p class="body_4"><strong>Zarządzanie stolikami i QR kodami</strong></p>
+                            <p class="body_4 color">Twórz i usuwaj stoliki, przydzielaj do nich odpowiednie QR kody.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="landing_img_box">
+                        <div id="img_3"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="section_cart_9" class="landing_section">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <h2 class="header_landing_2"><span class="color">PEŁNA</span><br><span class="big">KOMPATYBILNOŚĆ.</span></h2>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12">
+                    <div class="container_tiles bg">
+                        <div class="box_tile lg-3 restaurants">
+                            <h3 class="header_landing_3">RESTAURACJE</h3>
+                        </div>
+                        <div class="box_tile lg-3 bars">
+                            <h3 class="header_landing_3">BARY</h3>
+                        </div>
+                        <div class="box_tile lg-3 cafe">
+                            <h3 class="header_landing_3">KAWIARNIE</h3>
+                        </div>
+                        <div class="box_tile lg-3 common">
+                            <h3 class="header_landing_3">CZĘŚCI WSPÓLNE</h3>
+                        </div>
+                        <div class="box_tile lg-3 foodtrucks">
+                            <h3 class="header_landing_3">FOOD TRUCKI</h3>
+                        </div>
+                        <div class="box_tile lg-3 hotels">
+                            <h3 class="header_landing_3">HOTELE</h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="section_cart_3" class="landing_section">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <h3 class="header_landing_3">PROCES WDROŻENIA</h3>
+                    <div class="steps_container">
+                        <div class="step_box">
+                            <div class="top">
+                                <div class="left">1</div>
+                                <div class="right">
+                                    <div class="step_label">wyślij nam</div>
+                                    <div class="step_value">swoje zgłoszenie.</div>
+                                </div>
+                            </div>
+                            <div class="arrows">
+                                <span class="arrow_1"></span>
+                                <span class="arrow_2"></span>
+                                <span class="arrow_3"></span>
+                            </div>
+                        </div>
+                        <div class="step_box">
+                            <div class="top">
+                                <div class="left">2</div>
+                                <div class="right">
+                                    <div class="step_label">odezwiemy się i umówimy</div>
+                                    <div class="step_value">na prezentację w 48h.</div>
+                                </div>
+                            </div>
+                            <div class="arrows">
+                                <span class="arrow_1"></span>
+                                <span class="arrow_2"></span>
+                                <span class="arrow_3"></span>
+                            </div>
+                        </div>
+                        <div class="step_box active">
+                            <div class="top">
+                                <div class="left">3</div>
+                                <div class="right">
+                                    <div class="step_label">podpisz z nami umowę</div>
+                                    <div class="step_value">a my wdrożymy.</div>
+                                </div>
+                            </div>
+                            <div class="arrows">
+                                <span class="arrow_1"></span>
+                                <span class="arrow_2"></span>
+                                <span class="arrow_3"></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="section_cart_5" class="landing_section">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <h2 class="header_landing_2"><span class="big">FAQ.</span></h2>
+                    <ul class="toggle_list">
+                        <li class="active">
+                            <p class="heading body_4"><strong>Lorem ipsum dolor sit amet?</strong></p>
+                            <div class="text body_4">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</div>
+                        </li>
+                        <li>
+                            <p class="heading body_4"><strong>Lorem ipsum dolor sit amet?</strong></p>
+                            <div class="text body_4">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</div>
+                        </li>
+                        <li>
+                            <p class="heading body_4"><strong>Lorem ipsum dolor sit amet?</strong></p>
+                            <div class="text body_4">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</div>
+                        </li>
+                        <li>
+                            <p class="heading body_4"><strong>Lorem ipsum dolor sit amet?</strong></p>
+                            <div class="text body_4">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="section_10" class="landing_section dark">
+        <form id="form_contact" action="#" method="post">
+            <div class="container">
+                <div class="row top">
+                    <div class="col-12 center">
+                        <h2 class="header_landing_2">ROZPOCZNIJ<br/><span class="big color">BEZPŁATNE TESTY.</span></h2>
+                        <p class="body_4">Zostaw swoje dane, a wrócimy ze szczegółową ofertą<br/> usług i wsparciem tak szybko jak to możliwe.</p>
+                    </div>
+                </div>
+                <div class="row middle">
+                    <div class="col-lg-6">
+                        <p class="form_group">
+                            <input type="text" name="form_name" class="form_input_text" placeholder="nazwa restauracji" />
+                            <label>nazwa restauracji</label>
+                        </p>
+                        <p class="form_group">
+                            <input type="text" name="form_city" class="form_input_text" placeholder="miejscowość" />
+                            <label>miejscowość</label>
+                        </p>
+                        <p class="form_group">
+                            <input type="text" name="form_email" class="form_input_text" placeholder="email" />
+                            <label>email</label>
+                        </p>
+                        <div class="form_group last">
+                            <div class="form_inline form_phone_prefix_box form_select disabled">
+                                <div class="form_select_label">+48</div>
+                                <ul class="form_select_list">
+                                    <li class="selected">+48</li>
+                                </ul>
+                                <label></label>
+                                <input id="form_phone_prefix" name="form_phone_prefix" class="from_select_value" type="hidden" value="+48" />
+                            </div>
+                            <p class="form_inline form_phone_box">
+                                <input type="text" id="form_phone" name="form_phone" class="form_input_text" placeholder="numer telefonu"/>
+                                <label>numer telefonu</label>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <p class="form_group form_message_box last">
+                            <textarea name="form_message" class="form_input_text" placeholder="wiadomość (opcjonalnie)"></textarea>
+                            <label>wiadomość (opcjonalnie)</label>
+                        </p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12 center">
+                        <button class="btn_primary personal" type="submit">Wyślij wiadomość</button>
+                    </div>
+                </div>
+            </div>
+        </form>
+    </section>
+</main>
+<footer id="footer">
+    <div class="container">
+        <div class="row">
+            <div class="column_1 col-md-3">
+                <img class="logo" src="gfx/landing/logo_dinecloud2.svg" alt="DineCloud"/>
+                <p class="white">DineCloud sp. z o.o.</p>
+                <div>Marii Dąbrowskiej 24/12<br />33-100 Tarnów<br />Polska</div>
+                <div class="email">
+                    <a href="mailto:contact@dinecloud.net">contact@dinecloud.net</a>
+                </div>
+                <div class="socials">
+                    <a class="instagram" href="#" target="_blank"></a>
+                    <a class="facebook" href="#" target="_blank"></a>
+                    <a class="linkedin" href="#" target="_blank"></a>
+                </div>
+            </div>
+            <div class="column_2 col-md-3">
+                <h4 class="header_landing_4">Dla restauracji</h4>
+                <a href="#">Skontaktuj się</a>
+            </div>
+            <div class="column_3 col-md-3">
+                <h4 class="header_landing_4">Dla gości</h4>
+                <a href="#">Pobierz aplikację</a>
+            </div>
+            <div class="column_4 col-md-3">
+                <h4 class="header_landing_4">Poznawaj</h4>
+                <a href="#">Polityka prywatności</a>
+                <a href="#">Regulamin</a>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12">
+                <p class="copyright_text">&copy; 2024 DineCloud sp. z o.o.<br class="xs"> KRS: <span>0001048018</span>, NIP: <span>8733291405</span>, REGON: <span>525915687</span>.<br class="xs"> Wszystkie prawa zastrzeżone.</p>
+            </div>
+        </div>
+    </div>
+</footer>
+<div id="nav_mobile_container">
+    <p class="text">DLA RESTAURACJI</p>
+    <a class="btn_navbar_primary icon icon_chat_text">Skontaktuj się</a>
+    <p class="text mt">DLA GOŚCI</p>
+    <a class="btn_navbar_primary icon icon_import">Pobierz aplikację</a>
+</div>
+
+<script type="text/javascript" src="js/jquery.validate.min.js"></script>
+
+</body>
+</html>
