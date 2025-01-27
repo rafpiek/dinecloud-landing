@@ -1,6 +1,9 @@
+"use client";
 import { useForm } from "react-hook-form";
 import { z } from "zod";
 import { zodResolver } from "@hookform/resolvers/zod";
+import axios from "axios";
+import { useRouter } from "next/navigation";
 
 const formSchema = z.object({
   restaurantName: z.string().min(1, "Nazwa restauracji jest wymagana"),
@@ -12,7 +15,10 @@ const formSchema = z.object({
 
 type FormValues = z.infer<typeof formSchema>;
 
+const formUrl = "https://hook.eu1.make.com/ucxb0ws2pl9oay59rimmm3oordnwpqmo";
+
 export const ContactForm = () => {
+  const router = useRouter();
   const {
     register,
     handleSubmit,
@@ -21,9 +27,19 @@ export const ContactForm = () => {
     resolver: zodResolver(formSchema)
   });
 
-  const onSubmit = (data: FormValues) => {
+  const onSubmit = async (data: FormValues) => {
     console.log(data);
-    // Handle form submission
+
+    const response = await axios.post(formUrl, data, {
+      headers: {
+        'Content-Type': 'application/json'
+      }
+    });
+
+    if (response.status === 200) {
+        router.push("/thank-you");
+    }
+
   };
 
   return (
