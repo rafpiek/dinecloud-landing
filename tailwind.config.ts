@@ -13,6 +13,9 @@ export default {
         foreground: "var(--foreground)",
         primaryDark: "#191928",
       },
+      fontFamily: {
+        primary: ['Inter', 'sans-serif']
+      }
     },
   },
   plugins: [],
