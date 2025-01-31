@@ -20,7 +20,7 @@ export const Header = () => {
   return(
     <>
     <header id="header" className="fixed top-0 left-0 w-full transition-all duration-200 ease-in-out px-4 md:px-6 bg-primaryDark h-[64px] z-50">
-    <div className="w-full px-3">
+    <div className="w-full">
         <div className="flex flex-wrap items-center justify-between">
             <div className="w-[30%] md:w-1/2 col-6 flex justify-start items-center h-[64px] p-0">
                 <Link id="logo" href="/"></Link>

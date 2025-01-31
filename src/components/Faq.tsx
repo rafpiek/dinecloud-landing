@@ -10,7 +10,7 @@ export const Faq = () => {
 
   return(
     <section id="section_cart_5" className="landing_section">
-    <div className="mx-auto w-full max-w-[1320px] px-4 md:px-6">
+    <div className="mx-auto w-full max-w-[1320px] md:px-6">
         <div className="flex flex-wrap">
             <div className="w-full">
                 <h2 className="header_landing_2"><span className="big">FAQ.</span></h2>

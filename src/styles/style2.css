@@ -266,8 +266,12 @@
   align-content: space-between;
 }
 
-#section_cart_7 .header_landing_2, #section_cart_9 .header_landing_2 {
-  padding: 0 24px;
+#section_cart_9 .header_landing_2 {
+  padding: 0 16px;
+}
+
+#section_cart_7 .header_landing_2 {
+  padding: 0 16px;
 }
 
 .container_tiles {
@@ -1823,4 +1827,9 @@ strong {
     font-size: 16px;
     line-height: 24px;
   }
+}
+
+.landing_img_box {
+  background-color: rgba(0, 0, 40, 0.02);
+  border-radius: 24px;
 }
