@@ -1,0 +1,20 @@
+{
+    "applinks": {
+        "apps": [],
+        "details": [
+            {
+                "appID": "A6HY8XGKP8.net.dinecloud.customers",
+                "paths": ["/dl/*"]
+            }
+        ]
+    },
+    "appclips": {
+        "apps": ["A6HY8XGKP8.net.dinecloud.customers.Clip"],
+        "details": [
+            {
+                "appID": "A6HY8XGKP8.net.dinecloud.customers.Clip",
+                "paths": ["/dl/*"]
+            }
+        ]
+    }
+}

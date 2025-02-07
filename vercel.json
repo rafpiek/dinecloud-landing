@@ -1,0 +1,40 @@
+{
+  "headers": [
+    {
+      "source": "/.well-known/apple-app-site-association",
+      "headers": [
+        {
+          "key": "Content-Type",
+          "value": "application/json"
+        }
+      ]
+    },
+    {
+      "source": "/dl/:path*",
+      "headers": [
+        {
+          "key": "Content-Type",
+          "value": "text/html"
+        },
+        {
+          "key": "X-Apple-App-Clip-Bundle-ID",
+          "value": "net.dinecloud.customers.Clip"
+        }
+      ]
+    }
+  ],
+  "redirects": [
+    {
+      "source": "/dl/:path*",
+      "has": [
+        {
+          "type": "header",
+          "key": "sec-fetch-dest",
+          "value": "document"
+        }
+      ],
+      "destination": "https://web.dinecloud.net",
+      "permanent": false
+    }
+  ]
+}

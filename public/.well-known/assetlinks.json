@@ -1,0 +1,8 @@
+[{
+  "relation": ["delegate_permission/common.handle_all_urls"],
+  "target": {
+    "namespace": "android_app",
+    "package_name": "net.dinecloud.app",
+    "sha256_cert_fingerprints": ["84:E0:6C:F3:0B:B8:46:4A:C5:3E:EF:F0:93:F5:3C:5A:2A:93:F6:B1:A7:03:53:48:8F:02:4F:BA:43:BE:8F:8A"]
+  }
+}] 
