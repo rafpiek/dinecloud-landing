@@ -38,7 +38,7 @@ export default function DeepLinkPage() {
                 <span className="text-[50px] font-[400] block text-lightGreen2 uppercase tracking-wide">
                   Z aplikacją
                 </span>
-                <span className="text-[24px] font-[900] block uppercase">
+                <span className="text-[24px] font-[900] block uppercase text-white">
                   jest szybciej i łatwiej.
                 </span>
               </h1>
@@ -64,7 +64,7 @@ export default function DeepLinkPage() {
           <div className="mt-8 flex flex-col gap-4 z-20 relative mb-[48px] px-4">
             <Link
               href={downloadUrl}
-              className="flex h-[56px] px-4 justify-center items-center self-stretch rounded-[32px] font-semibold transition-colors bg-gradient-to-r from-[#90D900] to-[#28BF0A] shadow-[0_6px_24px_0_rgba(97,204,20,0.30)]"
+              className="flex h-[56px] px-4 justify-center text-white items-center self-stretch rounded-[32px] font-semibold transition-colors bg-gradient-to-r from-[#90D900] to-[#28BF0A] shadow-[0_6px_24px_0_rgba(97,204,20,0.30)]"
             >
               Pobierz aplikację
             </Link>
