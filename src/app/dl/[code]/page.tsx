@@ -22,7 +22,7 @@ export default function DeepLinkPage() {
       <Header showButtons={false} />
       <main className="relative">
         <section
-          className="pt-[104px] h-screen relative flex flex-col justify-between"
+          className="pt-[104px] h-screen relative flex flex-col justify-between overflow-hidden"
           style={{
             backgroundImage: `url(${heroImage.src})`,
             backgroundSize: "cover",
@@ -77,11 +77,9 @@ export default function DeepLinkPage() {
           </div>
 
           <div
-            className="absolute bottom-[-20%] w-full h-full bg-cover bg-center bg-no-repeat z-10 opacity-90"
+            className="absolute bottom-0 w-full h-[85%] bg-contain bg-bottom bg-no-repeat z-10"
             style={{
               backgroundImage: `url(${appPromoImage.src})`,
-              backgroundPosition: "center",
-              backgroundSize: "cover",
             }}
           >
             {/* Additional darker gradient for the bottom image */}
