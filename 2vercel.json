@@ -9,11 +9,5 @@
         }
       ]
     }
-  ],
-  "rewrites": [
-    {
-      "source": "/dl/:path*",
-      "destination": "https://web.dinecloud.net/dl/:path*"
-    }
   ]
 }

@@ -12,6 +12,7 @@ export default {
         background: "var(--background)",
         foreground: "var(--foreground)",
         primaryDark: "#191928",
+        lightGreen2: "#E7F7C6",
       },
       fontFamily: {
         primary: ['Inter', 'sans-serif']

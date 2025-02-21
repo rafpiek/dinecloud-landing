@@ -383,7 +383,6 @@ section.dark {
   font-weight: 400;
   font-size: 72px;
   line-height: 87px;
-  color: #ffe6d9;
 }
 .header_landing_1 span {
   display: block;
@@ -409,9 +408,6 @@ section.dark {
 .header_landing_2 .huge {
   font-size: 48px;
   line-height: 58px;
-}
-.header_landing_2 .color {
-  color: #ff4060;
 }
 .header_landing_3 {
   font-family: "Inter", sans-serif;

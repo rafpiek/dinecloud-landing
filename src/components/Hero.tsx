@@ -16,7 +16,7 @@ export const Hero = () => {
                     <Image className="logo_1" src={logoDinecloud} alt="DineCloud" width={200} height={50}/>
                 </div>
                 <div className="middle">
-                    <h1 className="header_landing_1">
+                    <h1 className="header_landing_1 text-lightGreen2">
                         QR MENU
                         <span>I PŁATNOŚCI ONLINE.</span>
                     </h1>

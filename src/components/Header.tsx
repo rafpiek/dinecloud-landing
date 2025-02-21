@@ -1,7 +1,11 @@
 import { useScrollToForm } from "@/hooks/useScrollToForm";
 import Link from "next/link";
 
-export const Header = () => {
+type HeaderProps = {
+  showButtons?: boolean;
+
+}
+export const Header = ({ showButtons = true }: HeaderProps) => {
 
   const scrollToForm = useScrollToForm();
 
@@ -24,18 +28,22 @@ export const Header = () => {
         <div className="flex flex-wrap items-center justify-between">
             <div className="w-[30%] md:w-1/2 col-6 flex justify-start items-center h-[64px] p-0">
                 <Link id="logo" href="/"></Link>
+                {showButtons && (
                 <nav id="nav_main" role="navigation">
                     <ul>
                         <li><Link className="btn_navbar_secondary no-underline" href="/download">Pobierz aplikację dla gości</Link></li>
                     </ul>
                 </nav>
+                )}
             </div>
             <div className="w-[70%] md:w-1/2 col-6 flex justify-end items-center h-[64px] p-0">
+                {showButtons && (
                 <div id="nav_right">
                     <span className="small_button">Rozpocznij bezpłatny testy!</span>
                     <a className="btn_navbar_primary cursor-pointer xs no-underline" onClick={scrollToForm}>Skontaktuj się</a>
                     <div id="nav_mobile_button" onClick={onMobileNavClick} className="btn_navbar_primary icon no_text"></div>
                 </div>
+                )}
             </div>
         </div>
     </div>
