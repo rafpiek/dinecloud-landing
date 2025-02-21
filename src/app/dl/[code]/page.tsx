@@ -4,8 +4,19 @@ import { DownloadButton } from "@/components/DownloadButton";
 import appPromoImage from "@/assets/images/app_promo.png";
 import Link from "next/link";
 import heroImage from "@/assets/images/landing/hero_client.jpg";
+import { APP_STORE_URL, GOOGLE_PLAY_URL, WEB_APP_URL } from "@/lib/constants";
+import { useMemo } from "react";
 
 export default function DeepLinkPage() {
+
+  const downloadUrl = useMemo(() => {
+    if (navigator.userAgent.includes("iPhone") || navigator.userAgent.includes("iPad")) {
+      return APP_STORE_URL;
+    }
+
+    return GOOGLE_PLAY_URL;
+  }, []);
+
   return (
     <>
       <Header showButtons={false} />
@@ -39,11 +50,11 @@ export default function DeepLinkPage() {
 
               <div className="flex flex-row justify-between">
                 <DownloadButton
-                  href="https://apps.apple.com/app/dinecloud"
+                  href={APP_STORE_URL}
                   variant="app-store"
                 />
                 <DownloadButton
-                  href="https://play.google.com/store/apps/details?id=com.dinecloud"
+                  href={GOOGLE_PLAY_URL}
                   variant="google-play"
                 />
               </div>
@@ -52,13 +63,13 @@ export default function DeepLinkPage() {
 
           <div className="mt-8 flex flex-col gap-4 z-20 relative mb-[48px] px-4">
             <Link
-              href="#"
+              href={downloadUrl}
               className="flex h-[56px] px-4 justify-center items-center self-stretch rounded-[32px] font-semibold transition-colors bg-gradient-to-r from-[#90D900] to-[#28BF0A] shadow-[0_6px_24px_0_rgba(97,204,20,0.30)]"
             >
               Pobierz aplikację
             </Link>
             <Link
-              href="#"
+              href={WEB_APP_URL}
               className="w-full py-4 border-[2px] border-solid border-[#E7F7C6] rounded-full text-center font-semibold text-[#E7F7C6] hover:bg-[#E7F7C6] hover:text-black transition-colors flex h-[56px] justify-center items-center"
             >
               Kontynuuj w przeglądarce
