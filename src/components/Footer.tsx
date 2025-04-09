@@ -8,7 +8,7 @@ export const Footer = () => {
             <div className="column_1 w-full md:w-1/4">
                 <Image className="logo" src={logoDinecloud2} alt="DineCloud" width={150} height={40}/>
                 <p className="white">DineCloud sp. z o.o.</p>
-                <div>Marii Dąbrowskiej 24/12<br />33-100 Tarnów<br />Polska</div>
+                <div>Jodłówka-Wałki 106b<br />33-150 Jodłówka-Wałki<br />Polska</div>
                 <div className="email">
                     <a href="mailto:contact@dinecloud.net" className="no-underline">contact@dinecloud.net</a>
                 </div>
