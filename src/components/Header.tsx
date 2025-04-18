@@ -1,3 +1,5 @@
+"use client"; // Mark this component as a Client Component
+
 import { useScrollToForm } from "@/hooks/useScrollToForm";
 import Link from "next/link";
 
