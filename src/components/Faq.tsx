@@ -33,65 +33,54 @@ export const Faq = () => {
 
   return(
     <section id="section_cart_5" className="landing_section">
-    <div className="mx-auto w-full max-w-[1320px] md:px-6">
+      <div className="mx-auto w-full max-w-[1320px] md:px-6">
         <div className="flex flex-wrap">
-            <div className="w-full">
-                <h2 className="header_landing_2"><span className="big">FAQ.</span></h2>
-                <ul className="toggle_list">
-                    {faqItems.map((item, index) => (
-                      <li key={index} className={openIndex === index ? 'active' : ''}>
-                        <p className="heading body_4" onClick={() => toggleActive(index)}>
-                          <strong>{item.question}</strong>
-                        </p>
-                        <AnimatePresence initial={false}>
-                          {openIndex === index && (
-                            <motion.div
-                              className="text body_4"
-                              initial={{ height: 0, opacity: 0 }}
-                              animate={{
-                                height: "auto",
-                                opacity: 1,
-                                transition: {
-                                  height: {
-                                    duration: 0.3,
-                                    ease: "easeOut"
-                                  },
-                                  opacity: {
-                                    duration: 0.2,
-                                    delay: 0.1
-                                  }
-                                }
-                              }}
-                              exit={{
-                                height: 0,
-                                opacity: 0,
-                                transition: {
-                                  height: {
-                                    duration: 0.3,
-                                    ease: "easeIn"
-                                  },
-                                  opacity: {
-                                    duration: 0.2
-                                  }
-                                }
-                              }}
-                            >
-                              <motion.div
-                                initial={{ y: -10 }}
-                                animate={{ y: 0 }}
-                                exit={{ y: -10 }}
-                              >
-                                {item.answer}
-                              </motion.div>
-                            </motion.div>
-                          )}
-                        </AnimatePresence>
-                      </li>
-                    ))}
-                </ul>
-            </div>
+          <div className="w-full">
+            <h2 className="header_landing_2"><span className="big">FAQ.</span></h2>
+            <ul className="toggle_list">
+              {faqItems.map((item, index) => (
+                <li key={index} className={openIndex === index ? 'active' : ''}>
+                  <p
+                    className="heading body_4 cursor-pointer flex justify-between items-center"
+                    onClick={() => toggleActive(index)}
+                  >
+                    <strong>{item.question}</strong>
+                    <motion.span
+                      animate={{ rotate: openIndex === index ? 180 : 0 }}
+                      transition={{ duration: 0.2 }}
+                      style={{ display: 'inline-block' }}
+                    >
+                      <svg width="12" height="8" viewBox="0 0 12 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M1.415 0.294922L6 4.87492L10.585 0.294922L12 1.70492L6 7.70492L0 1.70492L1.415 0.294922Z" fill="currentColor"/>
+                      </svg>
+                    </motion.span>
+                  </p>
+                  <AnimatePresence initial={false}>
+                    {openIndex === index && (
+                      <motion.section
+                        key="content"
+                        initial="collapsed"
+                        animate="open"
+                        exit="collapsed"
+                        variants={{
+                          open: { opacity: 1, height: "auto" },
+                          collapsed: { opacity: 0, height: 0 }
+                        }}
+                        transition={{ duration: 0.4, ease: [0.04, 0.62, 0.23, 0.98] }}
+                        style={{ overflow: 'hidden' }}
+                      >
+                        <div className="text body_4 pt-2 pb-4">
+                           {item.answer}
+                        </div>
+                      </motion.section>
+                    )}
+                  </AnimatePresence>
+                </li>
+              ))}
+            </ul>
+          </div>
         </div>
-    </div>
-</section>
+      </div>
+    </section>
   )
 }
