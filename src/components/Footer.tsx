@@ -28,8 +28,8 @@ export const Footer = () => {
             </div>
             <div className="column_4 w-full md:w-1/4">
                 <h4 className="header_landing_4">Poznawaj</h4>
-                <a className="no-underline" href="#">Polityka prywatności</a>
-                <a className="no-underline" href="#">Regulamin</a>
+                <a className="no-underline" href="/privacy-policy">Polityka prywatności</a>
+                <a className="no-underline" href="/terms-of-use">Regulamin</a>
             </div>
         </div>
         <div className="flex flex-wrap">
