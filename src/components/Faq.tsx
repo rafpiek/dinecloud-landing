@@ -8,6 +8,29 @@ export const Faq = () => {
     setOpenIndex(openIndex === index ? null : index);
   };
 
+  const faqItems = [
+    {
+      question: "Jak wygląda proces wdrożenia?",
+      answer: "Po skontaktowaniu się z nami, odezwiemy się w przeciągu 48h a następnie umówimy się na prezentację na żywo w państwa restauracji. Po podpisaniu umowy i skonfigurowaniu konta operatora płatności, dostarczymy QR kody do naklejenia, po czym cały system będzie gotowy do użytku przez klientów."
+    },
+    {
+      question: "Jak długo trwają darmowe testy",
+      answer: "Darmowe testy trwają 3 miesiące."
+    },
+    {
+      question: "Czy restauracja ponosi dodatkowe koszty podczas darmowych testów?",
+      answer: "Darmowe testy są w pełni darmowe i restauracja nie płaci miesięcznej opłaty za korzystanie z usług, natomiast pokrywa koszty procesowania transakcji u operatora płatności."
+    },
+    {
+      question: "Czy restauracja może zrezygnować z korzystania z usług w każdej chwili?",
+      answer: "Dokładne warunki i czas trwania usług ustalane są elastycznie i indywidualnie, oraz przedstawiane są w umowie ogólnych warunków współpracy."
+    },
+    {
+      question: "Czy restauracja może spersonalizować wygląd QR kodów?",
+      answer: "Tak, za dodatkową opłatą jest możliwość ręcznej personalizacji QR kodów, tak aby dostosować je do brandingu restauracji."
+    }
+  ];
+
   return(
     <section id="section_cart_5" className="landing_section">
     <div className="mx-auto w-full max-w-[1320px] md:px-6">
@@ -15,18 +38,18 @@ export const Faq = () => {
             <div className="w-full">
                 <h2 className="header_landing_2"><span className="big">FAQ.</span></h2>
                 <ul className="toggle_list">
-                    {[0, 1, 2, 3].map((index) => (
+                    {faqItems.map((item, index) => (
                       <li key={index} className={openIndex === index ? 'active' : ''}>
                         <p className="heading body_4" onClick={() => toggleActive(index)}>
-                          <strong>Lorem ipsum dolor sit amet?</strong>
+                          <strong>{item.question}</strong>
                         </p>
                         <AnimatePresence initial={false}>
                           {openIndex === index && (
                             <motion.div
                               className="text body_4"
                               initial={{ height: 0, opacity: 0 }}
-                              animate={{ 
-                                height: "auto", 
+                              animate={{
+                                height: "auto",
                                 opacity: 1,
                                 transition: {
                                   height: {
@@ -39,8 +62,8 @@ export const Faq = () => {
                                   }
                                 }
                               }}
-                              exit={{ 
-                                height: 0, 
+                              exit={{
+                                height: 0,
                                 opacity: 0,
                                 transition: {
                                   height: {
@@ -58,7 +81,7 @@ export const Faq = () => {
                                 animate={{ y: 0 }}
                                 exit={{ y: -10 }}
                               >
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                                {item.answer}
                               </motion.div>
                             </motion.div>
                           )}
