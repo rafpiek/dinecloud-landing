@@ -1,5 +1,4 @@
 "use client"
-import Image from "next/image"
 import Link from "next/link";
 import { isAndroid, isIOS, isMacOS } from "@/lib/device";
 import { useQRCode } from "next-qrcode";

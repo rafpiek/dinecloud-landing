@@ -1,5 +1,6 @@
 import logoDinecloud2 from "@/assets/images/landing/logo_dinecloud2.svg";
 import Image from "next/image";
+import Link from "next/link";
 export const Footer = () => {
   return (
     <footer id="footer">
@@ -21,6 +22,7 @@ export const Footer = () => {
             <div className="column_2 w-full md:w-1/4">
                 <h4 className="header_landing_4">Dla restauracji</h4>
                 <a className="no-underline" href="#">Skontaktuj się</a>
+                <Link href="https://app.dinecloud.net" className="no-underline">Zaloguj się do panelu</Link>
             </div>
             <div className="column_3 w-full md:w-1/4">
                 <h4 className="header_landing_4">Dla gości</h4>

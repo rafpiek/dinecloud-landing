@@ -10,14 +10,6 @@ import Link from "next/link";
 export const Hero = () => {
     const scrollToForm = useScrollToForm();
 
-    const openAppStore = () => {
-        console.log(APP_STORE_URL);
-    };
-
-    const openGooglePlay = () => {
-        console.log(GOOGLE_PLAY_URL);
-    };
-
   return(
     <section id="hero_section">
     <div className="container">
