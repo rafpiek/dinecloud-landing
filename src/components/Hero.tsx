@@ -35,8 +35,8 @@ export const Hero = () => {
                 </div>
                 <div className="bottom">
                     <a className="btn_primary personal contact_button no-underline" onClick={scrollToForm}>Skontaktuj się</a>
-                    <Link className="z-10" href={APP_STORE_URL} target="_blank" ><Image className="logo_2" src={logo2} alt="App Store" width={120} height={40} /></Link>
-                    <Link className="z-10" href={GOOGLE_PLAY_URL} target="_blank"><Image className="logo_3" src={logo3} alt="Google Play" width={120} height={40} /></Link>
+                    <Link className="z-10 app_url" href={APP_STORE_URL} target="_blank" ><Image className="logo_2" src={logo2} alt="App Store" width={120} height={40} /></Link>
+                    <Link className="z-10 app_url" href={GOOGLE_PLAY_URL} target="_blank"><Image className="logo_3" src={logo3} alt="Google Play" width={120} height={40} /></Link>
                 </div>
             </div>
         </div>

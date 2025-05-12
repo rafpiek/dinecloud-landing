@@ -1,7 +1,19 @@
-import Image from "next/image";
-import qr from "@/assets/images/landing/qr.svg";
+import Image from "next/image"
+import appStore from "@/assets/images/landing/app_store.svg";
+import playStore from "@/assets/images/landing/play_store.svg";
 import Link from "next/link";
+import { isAndroid, isIOS, isMacOS } from "@/lib/device";
 export default function DownloadPage() {
+    let qrCode = null
+    if (isAndroid()) {
+        qrCode = playStore
+    } else if (isIOS()) {
+        qrCode = appStore
+    } else if (isMacOS()) {
+        qrCode = appStore
+    } else {
+        qrCode = appStore
+    }
   return(
     <section className="standard_section height_100 bg-white">
     <div className="mx-auto max-w-7xl px-4 md:px-0">
@@ -12,7 +24,7 @@ export default function DownloadPage() {
                     <p className="body_3 center">Zeskanuj kod QR swoim telefonem aby pobrać aplikację.</p>
                 </div>
                 <div className="middle">
-                    <Image className="qr" width={100} height={100} src={qr} alt="" />
+                    <Image className="qr" width={100} height={100} src={qrCode} alt="" />
                 </div>
                 <div className="bottom center">
                     <a className="btn_primary personal" href="./">Gotowe</a>
