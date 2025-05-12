@@ -1,18 +1,20 @@
+"use client"
 import Image from "next/image"
-import appStore from "@/assets/images/landing/app_store.svg";
-import playStore from "@/assets/images/landing/play_store.svg";
 import Link from "next/link";
 import { isAndroid, isIOS, isMacOS } from "@/lib/device";
+import { useQRCode } from "next-qrcode";
+import { GOOGLE_PLAY_URL, APP_STORE_URL } from "@/lib/constants";
 export default function DownloadPage() {
-    let qrCode = null
+    const { Canvas } = useQRCode();
+    let qrCodeUrl = ""
     if (isAndroid()) {
-        qrCode = playStore
+        qrCodeUrl = GOOGLE_PLAY_URL
     } else if (isIOS()) {
-        qrCode = appStore
+        qrCodeUrl = APP_STORE_URL
     } else if (isMacOS()) {
-        qrCode = appStore
+        qrCodeUrl = APP_STORE_URL
     } else {
-        qrCode = appStore
+        qrCodeUrl = GOOGLE_PLAY_URL
     }
   return(
     <section className="standard_section height_100 bg-white">
@@ -24,7 +26,9 @@ export default function DownloadPage() {
                     <p className="body_3 center">Zeskanuj kod QR swoim telefonem aby pobrać aplikację.</p>
                 </div>
                 <div className="middle">
-                    <Image className="qr" width={100} height={100} src={qrCode} alt="" />
+                    <div className="qr">
+                        <Canvas text={qrCodeUrl} options={{ type: "svg", width: 392, }} />
+                    </div>
                 </div>
                 <div className="bottom center">
                     <a className="btn_primary personal" href="./">Gotowe</a>
