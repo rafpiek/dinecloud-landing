@@ -4,9 +4,20 @@ import logoDinecloud from "@/assets/images/landing/logo_dinecloud.svg";
 import logo3 from "@/assets/images/landing/logo_googleplay.svg";
 import Image from "next/image";
 import { useScrollToForm } from "@/hooks/useScrollToForm";
+import { APP_STORE_URL, GOOGLE_PLAY_URL } from "@/lib/constants";
+import Link from "next/link";
 
 export const Hero = () => {
     const scrollToForm = useScrollToForm();
+
+    const openAppStore = () => {
+        console.log(APP_STORE_URL);
+    };
+
+    const openGooglePlay = () => {
+        console.log(GOOGLE_PLAY_URL);
+    };
+
   return(
     <section id="hero_section">
     <div className="container">
@@ -24,8 +35,8 @@ export const Hero = () => {
                 </div>
                 <div className="bottom">
                     <a className="btn_primary personal contact_button no-underline" onClick={scrollToForm}>Skontaktuj się</a>
-                    <a className="app_url" href="#"><Image className="logo_2" src={logo2} alt="App Store" width={120} height={40} /></a>
-                    <a className="app_url" href="#"><Image className="logo_3" src={logo3} alt="Google Play" width={120} height={40} /></a>
+                    <Link className="z-10" href={APP_STORE_URL} target="_blank" ><Image className="logo_2" src={logo2} alt="App Store" width={120} height={40} /></Link>
+                    <Link className="z-10" href={GOOGLE_PLAY_URL} target="_blank"><Image className="logo_3" src={logo3} alt="Google Play" width={120} height={40} /></Link>
                 </div>
             </div>
         </div>
