@@ -1,6 +1,5 @@
 "use client";
 import { Header } from "@/components/Header";
-import Link from "next/link";
 import iconSuccess from "@/assets/images/icon-success.svg";
 import logoDinecloud from "@/assets/images/landing/logo_dinecloud.svg";
 import Image from "next/image";

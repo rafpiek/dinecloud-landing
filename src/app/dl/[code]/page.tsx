@@ -61,7 +61,7 @@ export default function DeepLinkPage() {
             </div>
           </div>
 
-          <div className="mt-8 flex flex-col gap-4 z-20 relative mb-[48px] px-4">
+          <div className="mt-8 flex flex-col gap-4 z-20 relative mb-[120px] pb-[env(safe-area-inset-bottom)] px-4">
             <Link
               href={downloadUrl}
               className="flex h-[56px] px-4 justify-center text-white items-center self-stretch rounded-[32px] font-semibold transition-colors bg-gradient-to-r from-[#90D900] to-[#28BF0A] shadow-[0_6px_24px_0_rgba(97,204,20,0.30)]"
