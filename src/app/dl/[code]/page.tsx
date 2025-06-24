@@ -6,8 +6,11 @@ import Link from "next/link";
 import heroImage from "@/assets/images/landing/hero_client.jpg";
 import { APP_STORE_URL, GOOGLE_PLAY_URL, WEB_APP_URL } from "@/lib/constants";
 import { useMemo } from "react";
+import { useParams } from "next/navigation";
 
 export default function DeepLinkPage() {
+  const params = useParams();
+  const code = params.code as string;
 
   const downloadUrl = useMemo(() => {
     if (navigator.userAgent.includes("iPhone") || navigator.userAgent.includes("iPad")) {
@@ -69,7 +72,7 @@ export default function DeepLinkPage() {
               Pobierz aplikację
             </Link>
             <Link
-              href={WEB_APP_URL}
+              href={`${WEB_APP_URL}?cid=${code}`}
               className="w-full py-4 border-[2px] border-solid border-[#E7F7C6] rounded-full text-center font-semibold text-[#E7F7C6] hover:bg-[#E7F7C6] hover:text-black transition-colors flex h-[56px] justify-center items-center"
             >
               Kontynuuj w przeglądarce
